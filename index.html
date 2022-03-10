@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project by JavaScript</title>
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="f_resize()">
+    <div id="container" class="containerMain">      
+    </div>
+    <div class="tool">
+        <h2 class="h6">CHỨC NĂNG</h2>
+        <hr>
+        <input id="astar" name="thuat" type="radio" class="btn" checked="true">
+        <span class="h6">A STAR (A)</span>
+        <br>
+        <input id="Dijstra" name="thuat" type="radio" class="btn">
+        <span class="h6">DIJKSTRA (D)</span>
+        <hr>
+        <div class="btn Cell btn-click" onclick="RunView_A()">CHẠY(R)</div>
+        <div class="btn Cell btn-click" onclick="Result()">KẾT QUẢ(S)</div>
+        <div class="btn Cell btn-click" onclick="newrun()">TẠO MỚI(N)</div>
+        <div class="btn Cell btn-click" onclick="makenew()">TẠO MỚI RỖNG(U)</div>
+        <div class="btn Cell btn-click" onclick="random()">NGẪU NHIÊN(V)</div>
+        <div class="btn Cell btn-click" onclick="show(3)">SHOW H(x) (H)</div>
+        <div class="btn Cell btn-click" onclick="show(2)">SHOW G(x) (G)</div>
+        <div class="btn Cell btn-click" onclick="show(1)">SHOW F(x) (F)</div>
+        <div class="btn Cell btn-click" onclick="hide()">HIDE (Z)</div>
+        <hr>
+    </div>
+    <div class="tool_show">
+        <span class="timer">Thời Gian:</span>
+        <span id="time" class="timer">0</span>
+        <span class="timer">time</span>
+        <br>
+        <span class="timer">Chi phí:</span>
+        <span id="buoc" class="timer">0</span>
+        <span class="timer">step(s)</span>
+        <br>
+        <span class="timer">Phần tử Open:</span>
+        <span id="slopen" class="timer">0</span>
+        <br>
+        <span class="timer">Phần tử Close:</span>
+        <span id="slclose" class="timer">0</span>
+        <br>
+        <span class="timer">Kích Thước:</span>
+        <span id="size" class="timer">0</span>
+        <hr>
+        <span class="btn light Cell timer"></span>
+        <span class="timer"> Left mouse (barrier)</span>
+        <br>
+        <span onclick="select = 1" class="btn from Cell timer"></span>
+        <span class="timer"> Middle mouse (from)</span>
+        <br>
+        <span onclick="select = 2" class="btn to Cell timer"></span>
+        <span class="timer"> Right mouse (to)</span>
+        <hr>
+        <span class="btn open Cell timer"></span>
+        <span class="timer"> Open cell</span> 
+        <br>    
+        <span class="btn close Cell timer"></span>
+        <span class="timer"> Close cell</span>
+        <hr>  
+        <div class="tt">Nguyễn Thị Lệ Hằng</div>
+        <div class="tt">Trần Thanh Khan</div>
+        <div class="tt">Bùi Nhật Trường Linh</div>
+        <div class="tt">Trương Như Ý</div>
+        <hr>
+        <div class="timer">CopyRight © Code of TW</div>
+    </div>
+</body>
+<script src="code_main.js"></script>
+</html>

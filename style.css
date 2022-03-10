@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(240deg, rgba(58,10,80,1) 0%, rgba(16,88,98,1) 100%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.containerMain{
+    margin: auto;
+    background: rgb(240, 240, 240);
+    height: 70%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 10px 5px 20px rgb(0, 1, 15);
+}
+#draw{
+    position: absolute;
+    pointer-events: none;
+}
+.containCell
+{
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 1px;
+}
+.Cell{
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    color:transparent;
+    border-radius: 2px;
+    display: flex; 
+    transition: all .2s linear;
+}
+.Cell:hover{
+    background: rgb(240, 238, 238);
+}
+.open
+{
+    background: rgb(230, 228, 228);
+    color:rgb(32, 22, 22);
+}
+.close{
+    background: #fdac29;
+    color:white;
+}
+
+.light{
+    background: rgb(15, 15, 15); 
+    color: rgb(15, 15, 15);
+}
+.light:hover{
+    background: rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 10px rgb(93, 93, 93);
+}
+.from{
+    opacity: 0.9;
+    background: rgb(241, 15, 53);
+    color: white
+}
+.from:hover{
+    opacity: 1; 
+    background: rgb(241, 15, 53);
+    box-shadow: 0 0 10px red;
+}
+.to{
+    opacity: 0.9;
+    background: rgb(0, 174, 255);
+    color:white;
+}
+.to:hover{ 
+    background: rgb(0, 174, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.menu
+{
+    background: silver;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+}
+.menu .btn
+{
+    width: 100px;
+    height: 80%;
+    margin: 5px;
+    background: white;
+}
+.menu .btn:hover
+{
+    background: rgb(250, 0, 0);
+}
+.nd{
+    margin: auto;
+    text-align: center;
+}
+.tool{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.btn{
+    width: 25px;
+    height: 25px;
+    transition: all .2s linear;
+    box-shadow: 2px 2px 4px rgba(27, 26, 26, 0.513);
+    font-size: 70%;
+    margin: 2px 2px; 
+    line-height: 25px;
+}
+.h6{
+    color:white;
+    height: 30px;
+}
+.btn-click
+{
+    width: auto;
+    padding: 0 10px;
+    cursor: pointer;
+    color:rgb(10, 164, 236);
+    font-weight: bold;
+    background: white;
+    font-size: 14px;
+}
+.tool_show{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+.timer{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgb(32, 30, 30);
+}
+hr{
+    margin: 10px 0px;
+    box-shadow: 2px 2px 2px rgba(44, 44, 44, 0.794);
+}
+.tt{
+    color:white;
+    padding: 0px 0px 0px 20px ;
+    font-family: 'Dancing Script','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
